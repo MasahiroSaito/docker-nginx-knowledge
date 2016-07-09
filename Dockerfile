@@ -7,4 +7,4 @@ RUN yum -y --nogpgcheck install tomcat6 tomcat6-webapps tomcat6-admin-webapps ja
 
 EXPOSE 8080
 
-CMD /etc/init.d/tomcat6 start
+CMD /etc/init.d/tomcat6 start && /bin/bash
