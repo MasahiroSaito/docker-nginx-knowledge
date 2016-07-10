@@ -8,10 +8,8 @@ knowledge:
     - "8080:8080"
   volumes_from:
     - data
-  volumes:
-    - ./knowledge/server.xml:/usr/local/tomcat/conf/server.xml
 nginx:
-  image: nginx:1.9
+  image: nginx
   ports:
     - "80:80"
   volumes:
