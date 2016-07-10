@@ -14,4 +14,4 @@ RUN useradd -M -d /usr/tomcat8 tomcat8 \
 
 EXPOSE 8080
 
-CMD su - tomcat8 -c /usr/tomcat8/bin/startup.sh
+CMD su - tomcat8 -c /usr/tomcat8/bin/startup.sh && /bin/bash
