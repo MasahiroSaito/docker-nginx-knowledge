@@ -1,0 +1,10 @@
+data:
+    image: busybox:1
+    volumes:
+        - /data/knowledge:/root/.knowledge
+knowledge:
+    image: m411momo/knowledge:1.0
+    ports:
+        - "80:8080"
+    volumes_from:
+        - data
